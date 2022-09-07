@@ -11,19 +11,23 @@ public class Slot : MonoBehaviour
     public Image slotImage;
     private Color originalColor;
     public InputActionReference grabReference = null;
-    public GameObject SlotObject;
+    private GameObject SlotObject = null;
+    private bool grabPressed = false;
     
     void Awake()
     {
         grabReference.action.started += OnGrab;
+        grabReference.action.canceled += OffGrab;
+    }
+
+    private void OffGrab(InputAction.CallbackContext obj)
+    {
+        grabPressed = false;
     }
 
     private void OnGrab(InputAction.CallbackContext obj)
     {
-        if(IsItem(SlotObject))
-        {
-            InsertItem(SlotObject);
-        }
+        grabPressed = true;
     }
 
     private void InsertItem(GameObject slotObject)
@@ -54,6 +58,12 @@ public class Slot : MonoBehaviour
     {
         if (ItemInSlot != null) return;
         SlotObject = other.gameObject;
+        if (!IsItem(SlotObject)) return;
+        if (grabPressed)
+        {
+            InsertItem(SlotObject);
+        }
+
 
     }
     // Update is called once per frame
