@@ -720,8 +720,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.08
+  m_Center: {x: -0.03, y: -0.03, z: -0.03}
 --- !u!114 &339784783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,6 +817,10 @@ MonoBehaviour:
     type: 3}
   _Secondary: {fileID: 4164187731983668456, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
+  _isGrabbing: 0
+  _isScalingUp: 0
+  _isScalingDown: 0
+  _grabbedObject: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -12832,7 +12836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &758230568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13564,7 +13568,7 @@ CharacterController:
   m_GameObject: {fileID: 1075962862}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Height: 2
   m_Radius: 0.2
@@ -14850,8 +14854,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.08
+  m_Center: {x: 0.03, y: -0.04, z: -0.03}
 --- !u!114 &1887688687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14947,6 +14951,10 @@ MonoBehaviour:
     type: 3}
   _Secondary: {fileID: -4792089281481484013, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
+  _isGrabbing: 0
+  _isScalingUp: 0
+  _isScalingDown: 0
+  _grabbedObject: {fileID: 0}
 --- !u!1 &2000262432
 GameObject:
   m_ObjectHideFlags: 0
