@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class SpawnButton : MonoBehaviour
+public class SpawnObject : MonoBehaviour
 {
     [SerializeField] private GameObject _toy;
     [SerializeField] private Transform _spawnPosition;
@@ -16,7 +16,7 @@ public class SpawnButton : MonoBehaviour
         if (other.CompareTag("Item"))
         {
             _hasItem = false;
-           // Debug.Log("has Item");
+            // Debug.Log("has Item");
         }
     }
     void OnTriggerEnter(Collider other){
@@ -24,7 +24,7 @@ public class SpawnButton : MonoBehaviour
         if (other.CompareTag("Item"))
         {
             _hasItem = true;
-           // Debug.Log("has Item");
+            // Debug.Log("has Item");
         }
     }
 
