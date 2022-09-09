@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd84d916-a286-46dd-959e-9969c349dc67" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubeGolBergMachine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubeGolBergMachine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
       <workItem from="1662527030287" duration="3540000" />
       <workItem from="1662531280877" duration="836000" />
       <workItem from="1662609214672" duration="1321000" />
-      <workItem from="1662680946405" duration="9430000" />
+      <workItem from="1662680946405" duration="10066000" />
     </task>
     <servers />
   </component>

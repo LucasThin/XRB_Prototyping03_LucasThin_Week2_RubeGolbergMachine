@@ -13,7 +13,7 @@ public class SpawnObject : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerExit(Collider other){
         //_toy.SetActive(false);
-        if (other.CompareTag("Item"))
+        if (other.CompareTag("Item") || other.CompareTag("Respawn"))
         {
             _hasItem = false;
             // Debug.Log("has Item");
@@ -21,7 +21,7 @@ public class SpawnObject : MonoBehaviour
     }
     void OnTriggerEnter(Collider other){
         //_toy.SetActive(false);
-        if (other.CompareTag("Item"))
+        if (other.CompareTag("Item") || other.CompareTag("Respawn"))
         {
             _hasItem = true;
             // Debug.Log("has Item");
