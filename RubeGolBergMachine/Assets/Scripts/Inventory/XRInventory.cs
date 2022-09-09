@@ -21,6 +21,8 @@ public class XRInventory : MonoBehaviour
     {
         UIActive = !UIActive;
         Inventory.SetActive(UIActive);
+        Inventory.gameObject.transform.position = Anchor.transform.position;
+        Inventory.gameObject.transform.rotation = Anchor.transform.rotation;
     }
     
 
@@ -30,13 +32,4 @@ public class XRInventory : MonoBehaviour
         UIActive = false;
     }
     
-    void Update()
-    {
-        if (UIActive)
-        {
-            Inventory.transform.position = Anchor.transform.position;
-            Inventory.transform.eulerAngles =
-                new Vector3(Anchor.transform.eulerAngles.x + 15, Anchor.transform.eulerAngles.y, 0);
-        }
-    }
 }

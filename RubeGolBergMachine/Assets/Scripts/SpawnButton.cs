@@ -10,6 +10,7 @@ public class SpawnButton : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other){
         //_toy.SetActive(false);
+        if (!other.CompareTag("Player")) return;
         Instantiate(_toy, _spawnPosition.position, quaternion.identity);
         Debug.Log("Spawn");
     }
